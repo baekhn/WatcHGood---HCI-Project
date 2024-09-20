@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>WatcHGoods</title>
+
+    <link rel="stylesheet" href="/css/contactus.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <nav class="navatas">
+        <div>BlueJay Group</div>
+        <div class="pagelinkatas">
+            <a href="#contactus">Contact Us</a>
+            <a href="#lang" ><i id="lang" data-feather="globe"></i>ENG</a>
+        </div>
+    </nav> -->
+    <!-- NAV -->
+    <nav class="navbawah">
+      <a href="#" class="logo">WatcHGoods</a>
+
+      <div class="pagelinks">
+        <a id="home-page" href="home.html">Home</a>
+        <a id="product" href="/html/product.html">Product</a>
+        <a id="findus" href="findus.html">Find Us</a>
+        <a id="aboutus" href="aboutus.html">About Us</a>
+        <a id="contactus" href="contactus.html">Contact Us</a>
+      </div>
+      <div class="icon">
+        <!-- <a href="#" id="search"><i data-feather="search"></i></a> -->
+        <a href="#" id="user"><i data-feather="user"></i></a>
+        <!-- <a href="#" id="cart"><i data-feather="shopping-bag"></i></a> -->
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <!-- NAV -->
+
+    <div class="banner-wrap">
+      <div class="img-wrap">
+        <img src="/assets/banner-contactUS.jpeg" alt="banner" />
+        <h1>Contact Us</h1>
+      </div>
+    </div>
+    <div class="get-in-touch">
+      <h1>Get In Touch</h1>
+      <p>Feel free to contact us anytime</p>
+    </div>
+    <div class="body">
+      <!-- form -->
+      <form method="post">
+        <div class="form">
+          <div class="fill-in">
+            <div class="input-data">
+              <label for="firstname">First Name</label>
+              <br />
+              <input type="text" name="name" id="firstname" />
+              <p id="demo"></p>
+              <!-- <div class="error">
+                <p id="errorfirstname">*First letter must be capital</p>
+              </div> -->
+            </div>
+            <div class="input-data">
+              <label for="lastname">Last Name</label>
+              <br />
+              <input type="text" name="name" id="lastname" />
+              <p id="demo1"></p>
+              <!-- <div class="error">
+                <p id="errorlastname">*First letter must be capital</p>
+              </div> -->
+            </div>
+            <div class="input-data">
+              <label for="email">Email</label>
+              <br />
+              <input type="text" name="email" id="email" />
+              <p id="demo2"></p>
+              <!-- <div class="error">
+                <p id="erroremail">
+                  *Email must be ended with gmail.com or yahoo.com
+                </p> -->
+              <!-- </div> -->
+            </div>
+            <div class="input-data">
+              <label for="country">Country/Region</label>
+              <br />
+              <input type="text" name="country" id="country" />
+              <p id="demo3"></p>
+              <!-- <div class="error">
+                <p id="errorcountry">*First letter must be capital</p>
+              </div> -->
+            </div>
+            <div class="input-data">
+              <label for="messages">Messages</label>
+              <br />
+
+              <input type="text" name="messages" id="messages" />
+            </div>
+          </div>
+          <div class="checkbox">
+            <div class="checkbox-wrap">
+              <input type="checkbox" name="privacynotice" id="privacynotice" />
+              <label for="privacynotice"
+                >I HAVE READ & UNDERSTOOD THE <a href="#">PRIVACY NOTICE</a>
+              </label>
+              <!-- <br /> -->
+              <br />
+            </div>
+            <p id="demo4"></p>
+            <!-- <div class="error">
+              <p id="errorchecked">*You must check if want to send messages</p>
+              <br />
+            </div> -->
+            <div class="checkbox-wrap">
+              <input type="checkbox" name="copymessages" id="copymessages" />
+              <label for="copymessages"
+                >I AGREE THAT WATCHGOODS WILL SENDS ME THE COPY OF MY MESSAGES
+                TO MY PERSONAL EMAIL
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="button-wrap">
+          <button type="button" onclick="validateData()">Submit</button>
+        </div>
+        <p id="success-message"></p>
+      </form>
+
+      <!-- form end -->
+
+      <!-- info data -->
+      <div class="info-data">
+        <div class="sosmed">
+          <h1>Follow Us</h1>
+          <div class="sosmed-logo">
+            <a href="#" id="insta"><i data-feather="instagram"></i></a>
+            <a href="#" id="twitter"><i data-feather="twitter"></i></a>
+            <a href="#" id="youtube"><i data-feather="youtube"></i></a>
+            <a href="#" id="fb"><i data-feather="facebook"></i></a>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="contact-list">
+            <h2>Email</h2>
+            <p>watcHGoods@gmail.com</p>
+          </div>
+
+          <div class="contact-list">
+            <h2>Headquater Address</h2>
+            <p>
+              UOB Plaza 31th Floor, Jl. MH Thamrin Kel No.10, RT.14/RW.20, Kb.
+              Melati, Kec. Tanah Abang, Kota Jakarta Pusat, Daerah Khusus
+              Ibukota Jakarta 10230
+            </p>
+          </div>
+          <div class="contact-list">
+            <h2>Phone Number</h2>
+            <p>+62 21 7654 2873</p>
+          </div>
+          <div class="contact-list">
+            <h2>Fax Address</h2>
+            <p>+6298 7645 9876</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="head-map">
+      <h3>Our Headquater</h3>
+      <br />
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4860022918783!2d106.82022807418163!3d-6.199431793788269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f565d978e17d%3A0x3101ade6be6103e!2sBank%20UOB%20KCU%20UOB%20Plaza!5e0!3m2!1sid!2sid!4v1686235254244!5m2!1sid!2sid"
+        width="1200"
+        height="500"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <footer class="footer-wrap">
+      <div class="foot-desc">
+        <div class="logo-wrap">
+          <a href="home.html" class="logo">WatcHGoods</a>
+        </div>
+
+        <div class="footer-nav">
+          <a href="/AoL/AoL ROMBAK/html/findus.html">Find Us</a>
+
+          <a href="/AoL/AoL ROMBAK/html/contactus.html">Contact Us</a>
+
+          <a href="#">FAQ</a>
+        </div>
+
+        <div class="footer-nav">
+          <a href="#">Service</a>
+
+          <a href="/AoL/AoL ROMBAK/html/aboutus.html">About Us</a>
+
+          <a href="#">Term and Condition</a>
+        </div>
+        <div class="sosmed-footer">
+          <h1>Follow Us</h1>
+          <div class="sosmed-logo-footer">
+            <a href="#" id="insta"><i data-feather="instagram"></i></a>
+            <a href="#" id="twitter"><i data-feather="twitter"></i></a>
+            <a href="#" id="youtube"><i data-feather="youtube"></i></a>
+            <a href="#" id="fb"><i data-feather="facebook"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>WATCHGOODS 2023. ALL RIGHT RESERVED</p>
+      </div>
+    </footer>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+  <script src="/html/hamburger.js"></script>
+</html>

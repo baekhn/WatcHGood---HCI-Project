@@ -1,0 +1,372 @@
+:root {
+  --primary: #423d3a;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  /* background-color: #dbd2bb; */
+  background-color: white;
+}
+
+/* NAV BAWAH */
+.navbawah {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  padding: 1.4rem 4%;
+  /* background-color: var(--primary); */
+  top: 0;
+  width: 100%;
+  height: 6rem;
+  /* border: red solid; */
+
+  z-index: 9999;
+}
+
+.logo {
+  font-family: "Libre Baskerville";
+  font-size: 2rem;
+  font-weight: 100;
+  color: white;
+  /* border: green solid; */
+}
+
+.navbawah .pagelinks a {
+  display: inline-block;
+  color: white;
+  margin: 0 1.5rem;
+}
+
+#aboutus {
+  color: #c0c0c0;
+}
+
+.navbawah .pagelinks a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.1rem solid white;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbawah .pagelinks a:hover::after {
+  transform: scaleX(1);
+}
+
+.navbawah .icon a {
+  color: white;
+  margin: 0 0.5rem;
+}
+
+.navbawah .icon a:hover {
+  color: #897c73;
+}
+
+#menu {
+  display: none;
+}
+
+/* BANNER */
+
+.banner-wrap {
+  width: 100%;
+  height: 30rem;
+}
+.img-wrap {
+  width: 100%;
+  height: 30rem;
+  position: relative;
+  background-color: black;
+}
+
+.img-wrap img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  opacity: 50%;
+}
+
+.img-wrap h1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: 6rem;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  /* border: white solid; */
+}
+
+.aboutus-desc {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* border: green solid; */
+}
+.founder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 10rem;
+  /* height: 40rem; */
+  /* border: aqua solid; */
+}
+
+.founder-pic {
+  width: 20rem;
+  height: 27rem;
+}
+
+.founder-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.founder-desc {
+  /* border: black solid; */
+  width: 30rem;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-family: "Libre Baskerville";
+}
+
+p {
+  text-align: center;
+  /* border: purple solid; */
+  /* background-image: url(/htmll/assets/foto.png); */
+}
+
+/* HISTORY */
+.history {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10rem;
+}
+
+.history-desc {
+  width: 30rem;
+}
+
+.store-now {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 10rem;
+  /* border: purple solid; */
+  flex-direction: row;
+  /* background-color: #141414; */
+  /* color: white; */
+}
+
+.store-now-pic {
+  width: 30rem;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.store-now img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.storenow-desc {
+  width: 30rem;
+  /* margin-right: 4.5rem; */
+}
+/* FOOTER */
+.footer-wrap {
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  /* justify-content: space-between; */
+  /* border: aqua solid; */
+  color: white;
+}
+
+.foot-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 2rem 3rem;
+  border-bottom: #897c73 solid 0.05rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  /* border: red solid; */
+}
+
+.footer-nav a {
+  color: white;
+}
+
+.sosmed-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sosmed-footer h1 {
+  font-weight: 400;
+}
+
+.sosmed-logo-footer {
+  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 2.5rem;
+}
+
+.sosmed-logo-footer a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+
+  color: white;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  font-family: "Libre Baskerville";
+  /* masi blm bisa fontnya */
+}
+
+/* media queries */
+
+/* laptop */
+@media (min-width: 1367px) {
+  html {
+    font-size: 130%;
+  }
+}
+
+/* tab */
+@media (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .navbawah .pagelinks {
+    position: absolute;
+    right: -100%;
+    top: 100%;
+    background-color: #141414;
+    width: 30rem;
+    height: 100vh;
+  }
+
+  /* .navbawah */
+  .pagelinks.active {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    right: 0;
+    transition: 0.2s;
+  }
+
+  .pagelinks.active a {
+    margin: 2rem 0;
+    /* border: green solid; */
+    font-size: 2rem;
+  }
+
+  .navbawah .pagelinks a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.1rem solid white;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+
+  .navbawah .pagelinks a:hover::after {
+    transform: scaleX(1);
+  }
+
+  /* ga bisa keknya
+    .navbawah .icon a{
+        width: 60%;
+        height: 60%;
+    } */
+}
+
+@media (max-width: 551px) {
+  .brand {
+    height: 55rem;
+  }
+  .brand-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /* align-items: center; */
+    /* margin: auto; */
+
+    width: auto;
+    height: 40rem;
+    border: rgb(172, 22, 22) solid;
+  }
+  .brand img {
+    width: 11.4rem;
+  }
+  .brand-position {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 2rem;
+  }
+
+  .brand-position img {
+    /* margin: left 2rem; */
+    margin: 1.5rem 1rem;
+  }
+
+  /* .service {
+    display: none;
+  } */
+}
+
+/* hp */
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}

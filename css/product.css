@@ -1,0 +1,438 @@
+:root {
+  --primary: #423d3a;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  /* background-color: #dbd2bb; */
+  background-color: white;
+}
+/* NAV ATAS */
+.navatas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 1rem;
+  font-size: 0.9rem;
+  background-color: var(--primary);
+  color: white;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.158);
+}
+
+.navatas .pagelinkatas a {
+  color: white;
+  display: inline-block;
+  margin: 0 0.2rem;
+}
+
+#lang {
+  align-items: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  padding-top: 0.5rem;
+}
+
+.navatas .pagelinkatas a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.1rem solid white;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navatas .pagelinkatas a:hover::after {
+  transform: scaleX(1);
+}
+
+/* NAV BAWAH */
+.navbawah {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  padding: 1.4rem 4%;
+  /* background-color: var(--primary); */
+  top: 0;
+  width: 100%;
+  height: 6rem;
+  /* border: red solid; */
+
+  /* z-index: 9999; */
+}
+
+.navbawah:hover {
+  background-color: rgb(0, 0, 0, 0.7);
+  transition: 0.2s;
+}
+
+/* .navbawah */
+.logo {
+  font-family: "Libre Baskerville";
+  font-size: 2rem;
+  font-weight: 100;
+  color: white;
+  /* border: blue solid; */
+}
+
+.navbawah .pagelinks a {
+  display: inline-block;
+  color: white;
+  margin: 0 1.5rem;
+}
+
+/* #product-page {
+  color: #9c4108;
+} */
+
+.navbawah .pagelinks a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.1rem solid white;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbawah .pagelinks a:hover::after {
+  transform: scaleX(1);
+}
+
+.navbawah .icon a {
+  color: white;
+  margin: 0 0.5rem;
+}
+
+.navbawah .icon a:hover {
+  color: #897c73;
+}
+
+#menu {
+  display: none;
+}
+
+.banner-wrap {
+  /* border: red solid; */
+  height: 35rem;
+}
+
+.img-wrap {
+  height: 35rem;
+}
+
+.img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Filter */
+.title {
+  margin: 4rem 5rem 0 5rem;
+}
+
+.filter-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin: 2rem 5rem;
+  /* border: red solid; */
+}
+
+.filter-wrap p {
+  color: #897c73;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 1.5rem; */
+  /* border: red solid; */
+  /* width: 60rem; */
+  font-weight: 600;
+}
+
+button {
+  border: #423d3a solid 0.3px;
+  background-color: transparent;
+  padding: 0.3rem 1.5rem;
+  border-radius: 0.3rem;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.2s;
+}
+
+#product {
+  color: #c0c0c0;
+}
+
+/* button::after {
+  background-color: black;
+} */
+
+/* PRODCUT LIST */
+
+.product-list {
+  /* border: purple solid; */
+  display: flex;
+  row-gap: 2rem;
+  column-gap: 4.75rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 5rem;
+  margin-bottom: 5rem;
+}
+
+/* .img-product-web:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+  border-radius: 0.5rem;
+} */
+
+.footer-wrap {
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  /* justify-content: space-between; */
+  /* border: aqua solid; */
+  color: white;
+}
+
+.foot-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 2rem 3rem;
+  border-bottom: #897c73 solid 0.05rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  /* border: red solid; */
+}
+
+.footer-nav a {
+  color: white;
+}
+
+.sosmed-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sosmed-footer h1 {
+  font-weight: 400;
+}
+
+.sosmed-logo-footer {
+  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 2.5rem;
+}
+
+.sosmed-logo-footer a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+
+  color: white;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  font-family: "Libre Baskerville";
+  /* masi blm bisa fontnya */
+}
+
+.hovercard {
+  /* product-newrelease */
+  width: 15em;
+  height: 20rem;
+  background-color: #f1f1f1;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  /* border: red solid; */
+}
+
+.hover-card-image {
+  height: 15rem;
+  overflow: hidden;
+}
+
+.hover-card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.hover-card-content h4 {
+  padding: 1rem 0;
+}
+.hover-card-content {
+  text-align: center;
+  padding: 0.5rem 0;
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  width: 100%;
+  background-color: #1a1a1a;
+  color: white;
+  transition: bottom 0.3s;
+}
+
+.hovercard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.hovercard:hover .hover-card-content {
+  bottom: 0;
+}
+
+/* media queries */
+
+/* laptop */
+@media (min-width: 1367px) {
+  html {
+    font-size: 130%;
+  }
+}
+
+/* tab */
+@media (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .navbawah .pagelinks {
+    position: absolute;
+    right: -100%;
+    top: 100%;
+    background-color: #141414;
+    width: 30rem;
+    height: 100vh;
+  }
+
+  /* .navbawah */
+  .pagelinks.active {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    right: 0;
+    transition: 0.2s;
+  }
+
+  .pagelinks.active a {
+    margin: 2rem 0;
+    /* border: green solid; */
+    font-size: 2rem;
+  }
+
+  .navbawah .pagelinks a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.1rem solid white;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+
+  .navbawah .pagelinks a:hover::after {
+    transform: scaleX(1);
+  }
+
+  /* ga bisa keknya
+    .navbawah .icon a{
+        width: 60%;
+        height: 60%;
+    } */
+}
+
+@media (max-width: 551px) {
+  .brand {
+    height: 55rem;
+  }
+  .brand-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /* align-items: center; */
+    /* margin: auto; */
+
+    width: auto;
+    height: 40rem;
+    border: rgb(172, 22, 22) solid;
+  }
+  .brand img {
+    width: 11.4rem;
+  }
+  .brand-position {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 2rem;
+  }
+
+  .brand-position img {
+    /* margin: left 2rem; */
+    margin: 1.5rem 1rem;
+  }
+
+  .filter-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20rem;
+    /* align-items: center; */
+    margin: 2rem 3rem;
+  }
+
+  /* .service {
+    display: none;
+  } */
+}
+
+/* hp */
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
